@@ -1,0 +1,13 @@
+.container {
+   height: 100%;
+   min-height: 0; /* 이걸 설정 전에는 리스트가 길어질 경우 헤더를 덮어버림 */
+   display: flex;
+   flex-direction: column;
+   background-color: var(--color-bg);
+}
+
+.list {
+   flex: 1 1 auto;
+   overflow-y: auto; 
+   /* overflow y축(세로)가 생기면 자동으로 스크롤이 생기도록 해준다 */
+}
